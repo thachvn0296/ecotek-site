@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ecotek - Carreers</title>
+  <meta name="description" content="A Everything to know about Ecotek Corporation website" />
+  <meta name="keywords" content="ecotek, ecopark, jobs, portfolio" />
+  <meta name="author" content="thachvn0296" />
+  <!-- <link rel="shortcut icon" href="../favicon.ico"> -->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <link href='http://fonts.googleapis.com/css?family=Playfair+Display:900,400|Lato:300,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="../css/etc.css" />
+  <link rel="stylesheet" type="text/css" href="../css/general-layout.css" />
+  <link rel="stylesheet" type="text/css" href="../css/jobs.css" />
+  <link rel="stylesheet" type="text/css" href="../css/table.css" />
+</head>
+
+<body>
+  <!-- about -->
+  <div class="about">
+    <a class="bg_links social portfolio" href="../index.html" target="_blank">
+      <span class="icon"></span>
+    </a>
+    <a class="bg_links social facebook" href="https://www.facebook.com/ecoone.vn/" target="_blank">
+      <span class="icon"></span>
+    </a>
+    <a class="bg_links social linkedin" href="http://linkedin.com/company/ecotekcorporation" target="_blank">
+      <span class="icon"></span>
+    </a>
+    <a class="bg_links logo"></a>
+  </div>
+  <!-- end about -->
+
+  <nav>
+    <div class="menu">
+      <p class="website_name">ECOTEK</p>
+      <div class="menu_links">
+        <a href="../index.html" class="link">Home</a>
+        <a href="../joblist.html" class="link">Carreers</a>
+        <!-- <a href="#" class="link">About us</a> -->
+      </div>
+      <div class="menu_icon" onclick="toggle_classes()">
+        <span class="icon"></span>
+      </div>
+    </div>
+  </nav>
+
+  <section class="wrapper">
+
+    <div class="container vertical-flex-wrapper general-wrapper-box general-wrapper">
+      <div class="general-wrapper-card-style">
+        <div class="general-description">
+          <div class="jobdetail-title-wrapper">
+            <div class="image-box job-image-box job-cat-ruby">
+              <!-- <img src="../img/jobcategory/Java.png"> -->
+            </div>
+            <div class="text-box">
+              <div>Ruby On Rails Developer</div>
+              <div>Ecopark, Full time • Up to VND 28 Million</div>
+            </div>
+          </div>
+          <div class="job-description">
+            <div class="job-section">
+              <div class="job-section__title">By applying to this role, you will be considered for the product team. We seek to match successful candidates to an ideal position based on their preferences and experience.</div>
+              <div class="job-section__desc">
+                <p>We are currently looking for a backend developer to design and develop the business logic and backend systems of the new flagship application developed by Ecotek using Ruby on Rails. By joining our team you will get to work closely with senior developers that are eager to share their knowledge. You will be able to help shape a team, and application, that will be expanding heavily within the upcoming months. If you strive to write high quality code while learning as much as you can - then working for Ecotek is for you!</p>
+              </div>
+              <div class="job-section__title">What you will do</div>
+              <div class="job-section__desc">
+                <ul>
+                  <li>Work closely with other developers to design, build, and maintain efficient, reusable, and reliable Ruby code.</li>
+                  <li>Write both unit and integration tests, and develop automation tools for daily tasks.</li>
+                  <li>Integrate a backend API and database with a frontend solution to give our users an optimal experience.</li>
+                  <li>Help shape a team, and product, by applying your own personal knowledge.</li>
+                  <li>Challenge ideas and opinions to avoid pitfalls and inefficient solutions.</li>
+                </ul>
+              </div>
+              <div class="job-section__title">What you need</div>
+              <div class="job-section__desc">
+                <ul>
+                  <li>Bachelor's Degree or higher, major in IT, Computer Science, or equivalent experience in professional development.</li>
+                  <li>Hands on experience in Ruby on Rails and SQL databases. </li>
+                  <li>An understanding of core backend methodology like REST, Design Patterns, and common pitfalls when using Ruby on Rails.</li>
+                  <li>Ability to write effective unit and integration tests.</li>
+                  <li>General knowledge of JavaScript, HTML, ReactJS, NodeJS, and frontend development is a plus.</li>
+                </ul>
+              </div>
+              <div class="job-section__title">Perks</div>
+              <div class="job-section__desc">
+                <ul>
+                  <li>The opportunity for rapid skill progress and on the job training</li>
+                  <li>Be part of an open culture where you can see your ideas put into action right away</li>
+                  <li>Flexible working hours & Included transportation</li>
+                  <li>Bonuses based on projects</li>
+                  <li>Possibility to join our awesome co-living community</li>
+                </ul>
+              </div>
+              <div class="job-section__title">Full time position, salary up to VND 28 Million.</div>
+              <div class="job-section__desc">If you are interested apply at HR@ecotekcorp.com</div>
+              <div class="apply-btn-wrapper">
+                <a class="apply-mail-link" href="mailto:HR@ecotekcorp.com?Subject=[Ecotek]%20Job%20Application">APPLY NOW</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script type="text/javascript">
+    var scene = document.getElementById('scene');
+    var parallax = new Parallax(scene);
+
+    function backHome() {
+      // Home page link
+      window.location.href = "#";
+    }
+
+    function toggle_classes() {
+
+
+      var menutop = document.getElementsByClassName('menu_links')[0];
+      console.log(menutop);
+      // menutop.toggle('menu_links_active');
+      if (menutop.classList.contains('menu_links_active')) {
+        // The box that we clicked has a class of bad so let's remove it and add the good class
+        menutop.classList.remove('menu_links_active');
+      } else {
+        // The user obviously can't follow instructions so let's alert them of what is supposed to happen next
+        menutop.classList.add('menu_links_active');
+      }
+    }
+  </script>
+</body>
+
+</html>

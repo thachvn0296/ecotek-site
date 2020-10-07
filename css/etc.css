@@ -1,0 +1,34 @@
+.title-style {
+  font-weight: bold;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.hide {
+  display: none;
+}
+
+.inline-quick-fix {
+  display: inline !important;
+}
+
+.p-30 {
+  padding: 30px;
+}
+
+.job-detail-sug {
+  text-align: center !important;
+  font-style: italic;
+  font-size: 20px;
+  color: gray;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.full-height{
+  height: 100%;
+}

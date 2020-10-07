@@ -1,0 +1,165 @@
+body {
+  background-image: url(../img/general-bg.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-color: #edf8f5;
+  background-size: 100%;
+}
+
+.table-title {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 50px 0;
+  width: 100%;
+}
+
+.general-description {
+  /* color: #FFEDC0; */
+  color: #fff;
+  width: 100%;
+}
+
+.general-description>p {
+  padding: 5px 0;
+}
+
+.table-of-job, .content-table {
+  width: 100%;
+  overflow: scroll;
+}
+
+.table-of-job::-webkit-scrollbar, .content-table::-webkit-scrollbar {
+  display: none;
+}
+
+.profile-card {}
+
+.jobdetail-title-wrapper {
+  display: flex;
+  /* justify-content: center; */
+  justify-content: flex-start;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0 20px 20px;
+}
+
+.jobdetail-title-wrapper .image-box {
+  width: 100px;
+  height: 100px;
+}
+
+.jobdetail-title-wrapper .image-box img {
+  width: 100%;
+  height: 100%;
+  border: none;
+  object-fit: cover;
+}
+
+.jobdetail-title-wrapper .text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 50px;
+}
+
+.jobdetail-title-wrapper .text-box div:nth-child(1) {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.jobdetail-title-wrapper .text-box div:nth-child(2) {
+  font-size: 25px;
+  font-style: italic;
+  font-weight: 100;
+}
+
+@media screen and (max-width: 600px) {
+  .jobdetail-title-wrapper {
+    flex-direction: column;
+  }
+
+  .jobdetail-title-wrapper .text-box {
+    padding: 0;
+  }
+
+  .jobdetail-title-wrapper .image-box {
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+.job-description {
+  padding: 20px;
+}
+
+.job-section>div {
+  padding: 5px 0;
+}
+
+.job-section__title {
+  font-weight: bold;
+}
+
+.job-section__desc>p {
+  padding: 5px 0;
+  margin-left: 20px;
+}
+
+.job-section__desc>ul, .job-section__desc>ul>li {
+  list-style: circle;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 1160px) {
+  .table-title, .general-description, .table-of-job {
+    /* padding: 10px 30px; */
+  }
+}
+
+.job-image-box {
+  /* background-size: cover; */
+  border-radius: 100%;
+}
+
+.job-cat-java {
+  background-image: url(../img/content/jobcategory/Java.png) !important;
+  border-radius: 100%;
+  background: no-repeat center/80%;
+  background-color: white;
+}
+
+.job-cat-reactjs, .job-cat-reactnative {
+  background-image: url(../img/content/jobcategory/ReactJS.png) !important;
+  border-radius: 100%;
+  background-size: cover;
+  background-color: white;
+}
+
+.job-cat-php {
+  background-image: url(../img/content/jobcategory/php.png) !important;
+  border-radius: 100%;
+  background-size: cover;
+  background-color: white;
+}
+
+.job-cat-ruby {
+  background-image: url(../img/content/jobcategory/ruby.png) !important;
+  border-radius: 100%;
+  background-size: cover;
+  background-color: white;
+}
+
+.job-cat-ba {
+  background-image: url(../img/content/jobcategory/ba.png) !important;
+  border-radius: 100%;
+  background-size: cover;
+  background-color: white;
+}
+
+.job-cat-designer {
+  background-image: url(../img/content/jobcategory/designer.png) !important;
+  border-radius: 100%;
+  background-size: cover;
+  background-color: white;
+}

@@ -1,0 +1,163 @@
+/* Lazy Load Styles */
+.card-image-profile {
+    display: flex;
+    border-radius: 8px;
+    text-decoration: none;
+    min-width: 300px;
+    min-height: 20rem;
+    /* layout hack */
+    background: #fff center center no-repeat;
+    background-size: cover;
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+    /* blur the lowres image */
+}
+
+.card-image-profile img {
+    display: block;
+    width: 100%;
+    opacity: 0;
+    /* visually hide the img element */
+}
+
+.card-image-profile.is-loaded {
+    -webkit-filter: none;
+    filter: none;
+    /* remove the blur on fullres image */
+    transition: -webkit-filter 0.7s;
+    transition: filter 0.7s;
+    transition: filter 0.7s, -webkit-filter 0.7s;
+}
+
+/* Layout Styles */
+.card-container-profile {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    max-width: 1100px;
+    padding: 0 20px;
+}
+
+.card-profile {
+    top: 0;
+    width: 330px;
+    height: 480px;
+    border-radius: 20px;
+    align-self: center;
+    margin: 1rem 5px;
+    display: flex;
+    position: relative;
+    cursor: default;
+    transition: all 0.25s ease-in-out;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.8);
+}
+
+.card-profile:hover {
+  top: -10px;
+}
+
+.picture-wrapper {
+  display: block;
+  width: 100%;
+}
+
+.boring, .fun {
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+}
+
+.card-profile:hover .boring {
+  display: none;
+}
+
+.card-profile:hover .fun {
+  display: unset;
+}
+
+.card-profile:hover:after {
+    bottom: -20px;
+    -webkit-filter: blur(14px);
+    filter: blur(14px);
+}
+
+.picture-wrapper img.fun {
+  display: none;
+}
+
+.card-profile.picture-wrapper img {
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    display: block;
+    vertical-align: middle;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center center;
+    object-position: center center;
+    -webkit-backface-visibility: hidden;
+}
+
+.card-profile .content-profile {
+    position: absolute;
+    /* bottom: 0; */
+    top: 350px;
+    padding: 0 2rem;
+    z-index: 1;
+    align-self: flex-end;
+    text-align: center;
+    margin: 0 auto 2.25rem auto;
+    width: 100%;
+}
+
+.card-profile .content-profile h2,
+.card-profile .content-profile h3 {
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    font-smoothing: antialiased;
+    text-shadow: 2px 1px 4px #000000;
+}
+
+.card-profile .content-profile h3 {
+    font-size: 10px;
+    font-family: Roboto;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    position: relative;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: inline-block;
+}
+
+.card-profile .content-profile h3:before,
+.card-profile .content-profile h3:after {
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 50px;
+    position: absolute;
+    margin: 0 auto;
+    top: 4px;
+    right: 100%;
+    text-shadow: 2px 1px 4px #000000;
+}
+
+.card-profile .content-profile h3:after {
+    left: 100%;
+}
+
+.card-profile .content-profile h2 {
+    color: #fff;
+    text-align: center;
+    /* font-size: 32px; */
+    font-size: 22px;
+    padding-top: 10px;
+    margin: 0 auto;
+}

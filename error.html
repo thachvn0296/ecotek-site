@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ecotek - Page Not Found</title>
+  <meta name="description" content="A Everything to know about Ecotek Corporation website" />
+  <meta name="keywords" content="ecotek, ecopark, jobs, portfolio" />
+  <meta name="author" content="thachvn0296" />
+  <link rel="shortcut icon" href="./img/favicon.ico">
+  <link href='http://fonts.googleapis.com/css?family=Playfair+Display:900,400|Lato:300,400,700' rel='stylesheet' type='text/css'>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="css/etc.css" />
+  <link rel="stylesheet" type="text/css" href="css/error-layout.css" />
+</head>
+
+<body>
+  <!-- about -->
+  <div class="about">
+    <a class="bg_links social portfolio" href="./index.html" target="_blank">
+      <span class="icon"></span>
+    </a>
+    <a class="bg_links social facebook" href="https://www.facebook.com/ecoone.vn/" target="_blank">
+      <span class="icon"></span>
+    </a>
+    <a class="bg_links social linkedin" href="http://linkedin.com/company/ecotekcorporation" target="_blank">
+      <span class="icon"></span>
+    </a>
+    <a class="bg_links logo"></a>
+  </div>
+  <!-- end about -->
+
+  <nav>
+    <div class="menu">
+      <p class="website_name">ECOTEK</p>
+      <div class="menu_links">
+        <a href="./index.html" class="link">Home</a>
+        <a href="./joblist.html" class="link">Carreers</a>
+        <!-- <a href="#" class="link">About us</a> -->
+      </div>
+      <div class="menu_icon" onclick="toggle_classes()">
+        <span class="icon"></span>
+      </div>
+    </div>
+  </nav>
+
+  <section class="wrapper">
+
+    <div class="container">
+
+      <div id="scene" class="scene" data-hover-only="false">
+
+
+        <div class="circle" data-depth="1.2"></div>
+
+        <div class="one" data-depth="0.9">
+          <div class="content">
+            <span class="piece"></span>
+            <span class="piece"></span>
+            <span class="piece"></span>
+          </div>
+        </div>
+
+        <div class="two" data-depth="0.60">
+          <div class="content">
+            <span class="piece"></span>
+            <span class="piece"></span>
+            <span class="piece"></span>
+          </div>
+        </div>
+
+        <div class="three" data-depth="0.40">
+          <div class="content">
+            <span class="piece"></span>
+            <span class="piece"></span>
+            <span class="piece"></span>
+          </div>
+        </div>
+
+        <p class="p404" data-depth="0.50">404</p>
+        <p class="p404" data-depth="0.10">404</p>
+
+      </div>
+
+      <div class="text">
+        <article>
+          <p>Uh oh! Looks like you got lost. <br>Go back to the home page now!</p>
+          <button>Home page</button>
+        </article>
+      </div>
+
+    </div>
+  </section>
+  <script type="text/javascript">
+    var scene = document.getElementById('scene');
+    var parallax = new Parallax(scene);
+
+    function toggle_classes() {
+
+
+      var menutop = document.getElementsByClassName('menu_links')[0];
+      console.log(menutop);
+      // menutop.toggle('menu_links_active');
+      if (menutop.classList.contains('menu_links_active')) {
+        // The box that we clicked has a class of bad so let's remove it and add the good class
+        menutop.classList.remove('menu_links_active');
+      } else {
+        // The user obviously can't follow instructions so let's alert them of what is supposed to happen next
+        menutop.classList.add('menu_links_active');
+      }
+    }
+  </script>
+</body>
+
+</html>
